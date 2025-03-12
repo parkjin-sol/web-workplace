@@ -1,0 +1,14 @@
+package com.kh.mcdonald.model.dto;
+
+/**
+ * 이 클래스의 목적은?
+ * 
+ * 1. DBMS에 존재하는 TB_USER테이블의 컬럼의 값을 옮겨 담아 VIEW까지 이동할 목적의 객체
+ * 
+ * 2. VIEW에서 사용자가 입력한 값을 필드에 담아 DAO까지 이동할 목적의 객체
+ */
+public class UserDTO {
+
+	private int userNo;
+	private String userId;
+}

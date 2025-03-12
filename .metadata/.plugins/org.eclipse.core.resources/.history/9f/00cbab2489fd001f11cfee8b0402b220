@@ -1,0 +1,9 @@
+package com.kh.mcdonald.model.dto;
+
+public class Hamburger {
+	private String name;
+	private int price;
+	private String brand;
+	
+	
+}	

@@ -1,0 +1,10 @@
+package com.kh.mcdonald.model.service;
+
+public class UserService {
+	
+	private UserDAO userDao = new UserDaO();
+	
+	public List<UserDTO> finAll() {
+		UserDAO userDao = new UserDAO();
+	}
+}

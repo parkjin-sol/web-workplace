@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>눌렀음</title>
+<style type="text/css">
+	body {
+		padding: 250px
+	}
+	
+</style>
+</head>
+<body>
+	<!-- 
+		case 1 : 요청URL -> static 뒤로 url이 바뀜
+		-> 상대경로 방식
+		-> 현재 url의 가장 마지막 슬래쉬(/)뒤에 값이 붙음
+		
+		case 2 : http://www.naver.com -> 전체 url이 바뀜 
+		-> form태그로는 사용하지않음
+		
+		case 3 : /bk/case3 
+		-> 절대 경로 방식
+		
+		form에서 요청했을 경우 서버에서 요청을 처리
+		-> tomcat에서 처리 
+		컨트롤러는 자바로 만듦 
+		자바를 이용해서 사용자의 웹 요청을 받아서 처리 를 위해 -> servlet 사용
+		servlet은 인터페이스로 되어있음 -> implement를 통해 추상화하여 강제
+	-->
+	
+	<form action="/bk/order" method="POST" name= "">
+		<!-- form에 action / method 필수 -->
+		<h1>나는 정적자원</h1>
+		<!-- 동적으로 개발된 페이지 url를 보내기 위해서 Servlet 에 요청해야함
+			 입력양식이 있어야 사용자에게 요청받을 수 있음  -->
+		
+		<span>주문하실 개수를 입력해주셔</span> <br>
+		<input type="text" name="num" placeholder="숫자만 넣어주세요!">
+		<button type="submit" name="num">확인</button>
+	</form>
+	
+</body>
+</html>

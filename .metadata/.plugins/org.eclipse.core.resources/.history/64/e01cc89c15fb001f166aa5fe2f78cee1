@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1 {
+		color: orangered;
+		text-align: center;
+		font-size: 70px;
+		background-image: url("https://cdn.bootcampkorea.com/bootcamp/KH%20Information%20Education%20Center.png");
+		background-size: 100% 
+	}
+</style>
+</head>
+<body>
+
+
+<h1></h1>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.kh.mfw.member.model.dto;
+
+public class MemberDTO {
+
+}
