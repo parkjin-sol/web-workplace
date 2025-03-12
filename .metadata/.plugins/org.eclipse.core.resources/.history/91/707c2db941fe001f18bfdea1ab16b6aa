@@ -1,8 +1,0 @@
-package com.kh.mcdonald.model.dto;
-
-/**
- * 이 클래스의 목적은
- */
-public class UserDTO {
-
-}
