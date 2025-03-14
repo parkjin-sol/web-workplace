@@ -739,3 +739,46 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 	{
 	background-color: #fed136
 }
+
+
+/* header 및 footer 설정 값 */
+
+ #mainNav .navbar-nav .nav-item .nav-link {
+        font-weight: 600;
+    }
+
+    #sub-bg{
+        width : 80%;
+        margin : auto;
+        height : 1200px;
+        padding-top : 60px;
+        padding-bottom : 60px;
+        margin-top : 300px;
+    }
+
+    #sub-1{
+        width : 70%;
+        height : 40%;
+        margin-right : auto;
+        background-image: url(https://www.kh-academy.co.kr/resources/images/main/main_renewal/sub/sub02/educationinfo/jongro/04.jpg);
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    #sub-2{
+        margin-top : 120px;
+        width : 70%;
+        margin-left : auto;
+        height : 40%;
+        background-image: url(https://www.kh-academy.co.kr/resources/images/main/main_renewal/sub/sub02/educationinfo/jongro/05.jpg);
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    footer{
+        border-top: #52b1ff28 1px solid;
+    }
+
+    .dropdown:hover > .dropdown-menu { 
+        display: block;  
+    }
