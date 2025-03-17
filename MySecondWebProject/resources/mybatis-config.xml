@@ -3,33 +3,25 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
-	<!-- typeAliases : 자바타입 별칭 찾기 -->
-	 <typeAliases>	
-	 	<typeAlias type="com.kh.mfw.member.model.dto.MemberDTO"
-	 	alias="memberDTO"/>
-	 	
-	 </typeAliases>
-	 
-	 <!-- 주의할점 : 
-	 		1) 패키지에 클래스가 있어야 typeAliases 에 등록해야함 안그럼 에러 
-	 		2) Mapper도 없는 상태에서 등록하면 에러 
-	 		3) Mapper는 등록하려면 namespace 속성이 있어야함, 중복금지	
-	 -->
-	 
-	<!-- 
+	
+	<typeAliases>
+		<typeAlias type="com.kh.mfw.member.model.dto.MemberDTO" alias="memberDTO" />
+		<typeAlias type="com.kh.mfw.board.model.dto.BoardDTO" alias="boardDTO" />
+	</typeAliases>
+	
+	<!--
 		environments : MyBatis를 이용해서 우리가 연동할 DBMS의 정보를 등록하는 태그
 	 -->
 	 <environments default="development">
 	 	<environment id="development">
-	 		<!--  
+	 		<!--
 	 			* transactionManager : 트랜잭션 관련해서 어떻게 작업을 처리할 것인지
 	 			- JDBC		: 트랜잭션을 개발자가 직접관리하겠다. (수동 commit)
 	 			- MANAGED	: 개발자가 트랜잭션에 대해 어떤 영향도 끼치지 않겠다. (자동 commit)
 	 		 -->
 	 		<transactionManager type="JDBC"/>
 	 		
-	 		<!-- 
+	 		<!--
 	 			* dataSource의 type속성은 POOLED랑 UNPOOLED 중 하나 선택해서 작성
 	 			Connection Pool : Connection객체를 담아둘 수 있는 영역, 한 번 생성된 Connection을 재사용
 	 			
@@ -40,20 +32,20 @@
 	 		 -->
 	 		<dataSource type="POOLED">
 				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-				<property name="url" value="jdbc:oracle:thin:@112.221.156.34:12345:xe"/>	 
-				<property name="username" value="KH20_CSH" />
+				<property name="url" value="jdbc:oracle:thin:@112.221.156.34:12345:xe"/>	
+				<property name="username" value="KH11_PJS" />
 				<property name="password" value="KH1234" />		
 	 		</dataSource>
 	 	</environment>
 	 </environments>
-	 
+	
 	 <!--  mappers : 실행할 SQL문을 기록해둔 mapper파일을 등록 -->
 	 <mappers>
 	 	<mapper resource="/mappers/member-mapper.xml" />
+	 	<mapper resource="/mappers/board-mapper.xml" />
 	 </mappers>
-	 
-	 
-	 
-	 
+	
+	
+	
 	
 </configuration>

@@ -3,3 +3,7 @@ Controller (데이터가공) -> Service (의사결정코드) ->
 DAO(SQL문 실행하고 결과받기-- db에서 ) -> service에서 controller 전달 
 -> controller -> view로 전달
 
+JSP --> 동적으로 
+
+서버에서는 JS가 돌아갈수 없음
+자바코드는 무조건 돌아가도록 되어있음

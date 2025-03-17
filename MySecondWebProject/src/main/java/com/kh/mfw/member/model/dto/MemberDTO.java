@@ -1,19 +1,27 @@
 package com.kh.mfw.member.model.dto;
-
 import java.sql.Date;
-
 public class MemberDTO {
-	
 	private String memberId;
 	private String memberPw;
 	private String memberName;
-	private String email; 
+	private String email;
 	private Date enrollDate;
-	public String getMemberId() {
-		return memberId;
-	}
+	
 	public MemberDTO() {
 		super();
+	}
+	
+	public MemberDTO(String memberId, String memberPw, String memberName, String email, Date enrollDate) {
+		super();
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberName = memberName;
+		this.email = email;
+		this.enrollDate = enrollDate;
+	}
+	
+	public String getMemberId() {
+		return memberId;
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
@@ -42,22 +50,9 @@ public class MemberDTO {
 	public void setEnrollDate(Date enrollDate) {
 		this.enrollDate = enrollDate;
 	}
-	
-	
-	public MemberDTO(String memberId, String memberPw, String memberName, String email, Date enrollDate) {
-		super();
-		this.memberId = memberId;
-		this.memberPw = memberPw;
-		this.memberName = memberName;
-		this.email = email;
-		this.enrollDate = enrollDate;
-	}
 	@Override
 	public String toString() {
 		return "MemberDTO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName + ", email="
 				+ email + ", enrollDate=" + enrollDate + "]";
 	}
-	
-	
-	
 }
