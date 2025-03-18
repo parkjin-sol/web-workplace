@@ -41,7 +41,7 @@ public class MemberDAO {
 		MemberDTO loginMember = null;
 		
 		try {
-		conn = DriverManager.getConnection( "jdbc:oracle:thin:@112.221.156.34:12345:XE",
+		conn = DriverManager.getConnection( "",
 											"KH00_TEACHER",
 											"KH1234");
 		
