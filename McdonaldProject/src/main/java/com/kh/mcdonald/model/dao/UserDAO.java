@@ -21,7 +21,7 @@ public class UserDAO {
 	}
 	public List<UserDTO> findAll() {
 		List<UserDTO> list = new ArrayList();
-		try(Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@112.221.156.34:12345:XE", 
+		try(Connection conn = DriverManager.getConnection("", 
 				"KH11_PJS", "KH1234");
 				PreparedStatement pstmt = conn.prepareStatement(
 						"""
