@@ -32,7 +32,7 @@
 	 		 -->
 	 		<dataSource type="POOLED">
 				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-				<property name="url" value="jdbc:oracle:thin:@112.221.156.34:12345:xe"/>	
+				<property name="url" value=""/>	
 				<property name="username" value="KH11_PJS" />
 				<property name="password" value="KH1234" />		
 	 		</dataSource>
